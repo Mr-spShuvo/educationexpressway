@@ -1,0 +1,354 @@
+/*   
+Theme Name: EDUCATIONEXPRESSWAY
+Description: This theme is built for educationexpressway.com by 1MANDEV. Please DON'T deactivated or delete this theme unless you are the developer of the Website. ⚠️ Proceed with Caution.
+Author: 1MANDEV
+Author URI: https://1mandev.com
+Version: 1.0
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: malina
+*/
+
+// Color Schemes
+// Main Color: #00B8AC;
+// Sub Color: #1D5451;
+
+body {
+  color: #1d5451;
+}
+
+/*******************************
+* => Header Styles
+********************************/
+
+#header.header4 .social-icons-block {
+  display: none;
+}
+
+#header.header4 .logo {
+  padding: 12px 0;
+}
+
+#header.header4.header-scrolled .logo img {
+  max-width: 130px;
+}
+
+#mobile-header .logo img {
+  width: auto;
+  height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  header#mobile-header .search-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #mobile-header .logo img {
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 782px) and (max-width: 1300px) {
+  #header.header4 .logo {
+    width: 22%;
+  }
+  #header.header4 > .container > .span12 #navigation-block {
+    border: none;
+    padding-top: 0;
+    width: 78%;
+    margin-left: auto;
+  }
+}
+
+/*******************************
+* => Header Hero
+********************************/
+
+.header-hero {
+  position: relative;
+  width: auto;
+  height: 65vh;
+}
+
+.header-hero__img {
+  width: 100%;
+  height: 100%;
+  object-position: right;
+  object-fit: cover;
+}
+
+.header-hero__content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
+.header-hero__title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.header-hero__details {
+  color: #fafafa;
+}
+
+.header-hero__button {
+  display: block;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 15px 42px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #f9f9f9;
+  border: none;
+  background: linear-gradient(to top left, #1d5451, #1d545199);
+  transition: all 0.3s ease-in-out;
+}
+
+.header-hero__button:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-hero__content {
+    width: 80%;
+  }
+  .header-hero__img {
+    filter: blur(1px) brightness(0.75);
+  }
+
+  .header-hero__title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-hero__title {
+    font-size: 28px;
+    color: #fafafa;
+  }
+
+  .header-hero__img {
+    filter: blur(2px) brightness(0.5);
+  }
+
+  .header-hero__content {
+    text-align: center;
+  }
+
+  .header-hero__details {
+    font-size: 13px;
+  }
+  .header-hero__button {
+    margin: 0 auto;
+  }
+}
+
+/*******************************
+* => Footer Styles
+********************************/
+.sticky .title h2 {
+  line-height: 1.1;
+}
+.sticky .title h2 a {
+  font-size: 26px;
+  letter-spacing: 0;
+}
+.post-content-side {
+  text-align: left;
+}
+
+.post-meta .post-more a > i {
+  color: #00bbac;
+}
+
+#pagination span,
+#pagination a {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.single-post #page-wrap-blog {
+  padding-top: 0;
+}
+.single-post .post #comments {
+  padding-top: 0;
+  border: none;
+}
+
+/*******************************
+* => Footer Styles
+********************************/
+
+#footer {
+  z-index: -111;
+  position: relative;
+  padding: 0;
+}
+
+#footer .social-icons span {
+  display: none !important;
+}
+
+#footer .social-icons li a > i {
+  font-size: 20px;
+  color: #00bbac;
+}
+
+.footer-layout-4#footer-copy-block {
+  background-color: #00bbac;
+  padding: 15px 0;
+}
+
+.footer-menu-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#footer #footer-widgets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-text {
+  color: #eee;
+}
+.copyright-text a {
+  color: #1d5451;
+}
+
+#footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 850px) {
+  #footer .container {
+    flex-direction: column;
+  }
+  #footer #footer-widgets {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .widget.widget_nav_menu:first-child {
+    margin-right: 50px;
+    margin-bottom: 35px;
+  }
+
+  .footer-menu-text {
+    display: none;
+  }
+}
+
+/*******************************
+* => Modifying Styles
+********************************/
+
+#navigation-block .search-link {
+  display: none;
+}
+
+#back-to-top a {
+  background-color: #00bbac;
+}
+
+.wp-block-button > a {
+  background-color: #00bbac;
+}
+
+.wp-block-columns.learn-more-template {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+/*******************************
+* => Footer c2a Section
+********************************/
+.footer-c2a {
+  width: 86.5%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.footer-c2a__img {
+  flex-basis: 30%;
+  display: block;
+  margin-right: 30px;
+}
+
+.footer-c2a__details {
+  flex-basis: 60%;
+  padding: 20px;
+}
+
+.footer-c2a__details h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.footer-c2a__details h3 span {
+  border-bottom: 3.5px solid #00bbac;
+}
+
+.footer-c2a__btn {
+  display: block;
+  max-width: 180px;
+  flex-shrink: 0;
+  box-shadow: 3px 3px 12px #33627825;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13.5px;
+  padding: 7px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #f9f9f9;
+  border: none;
+  background: linear-gradient(to top left, #00bbac, #00bbac90);
+}
+
+.footer-c2a__btn:hover {
+  color: #f9f9f9;
+}
+
+.footer-c2a__btn:focus,
+.footer-c2a__btn:active {
+  outline: none !important;
+  box-shadow: 3px 3px 12px #33627805;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-c2a {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-c2a__img {
+    flex-basis: 30%;
+    margin-right: 0px;
+  }
+
+  .footer-c2a__details {
+    text-align: center;
+  }
+  .footer-c2a__btn {
+    margin: 0 auto;
+  }
+}
